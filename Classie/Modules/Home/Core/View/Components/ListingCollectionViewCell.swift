@@ -74,10 +74,10 @@ final class ListingCollectionViewCell: UICollectionViewCell, Reusable, BindableT
         titleLabel.text = viewModel.name
         priceLabel.text = viewModel.price
         dateLabel.text = viewModel.createdAt
-        let inputs = viewModel.images.map { KingfisherSource(url: $0, placeholder: Assets.defaultPlaceholder())}
+        let images = viewModel.images + Picsum.Generator.randomImages()
 
         //TODO: - Remove this logic once multiple images will be available for any of the items
-        let mocksImages = Array(repeating: inputs, count: Int.random(in: 1..<10)).flatMap { $0 }
+        let mocksImages = images.map { CustomImageSource(url: $0, placeholder: Assets.defaultPlaceholder())}
         imageCarouselView.setImageInputs(mocksImages)
     }
 }

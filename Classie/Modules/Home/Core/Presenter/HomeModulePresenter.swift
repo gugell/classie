@@ -49,7 +49,7 @@ final class HomeModulePresenter: HomeModuleViewOutput, HomeModuleInteractorOutpu
         view?.applySnapshot(snapshot: snapshot)
     }
 
-    func interactorDidFailWithError(_ error: Error) {
+    func interactorDidFailWithError(_ error: String) {
         view?.endRefreshing()
         view?.showEmptyView()
         router.showErrorAlert(error, onRetry: reloadData)

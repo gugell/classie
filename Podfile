@@ -15,7 +15,6 @@ def ui
   pod 'MBProgressHUD', '1.2.0'
   pod 'Reusable'
   pod 'ImageSlideshow', '~> 1.9.0'
-  pod "ImageSlideshow/Kingfisher"
 end
 
 target 'Classie' do

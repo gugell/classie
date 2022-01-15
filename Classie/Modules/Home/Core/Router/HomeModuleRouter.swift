@@ -15,7 +15,7 @@ protocol HomeModuleRouterInput: AnyObject {
   /// Show error alert
   /// - Parameter error: Error to show
   /// - Parameter onRetry: Action to be invoked on retry
-    func showErrorAlert(_ error: Error, onRetry: @escaping EmptyAction)
+    func showErrorAlert(_ error: String, onRetry: @escaping EmptyAction)
 }
 
 /// Modules router
@@ -31,12 +31,12 @@ final class HomeModuleRouter: HomeModuleRouterInput {
         coordinator.showListingDetails(listing)
     }
 
-    func showErrorAlert(_ error: Error, onRetry: @escaping EmptyAction) {
+    func showErrorAlert(_ error: String, onRetry: @escaping EmptyAction) {
         let retryAction = Alert.Action(title: L10n.Action.retry,
                                        style: .default,
                                        handler: onRetry)
         let alert = Alert(title: L10n.Error.Fetch.title,
-                     message: error.localizedDescription,
+                     message: error,
                      actions: [retryAction, Alert.Action.cancel])
         coordinator.showAlert(alert)
     }

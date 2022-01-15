@@ -22,3 +22,8 @@ extension ImageAsset {
     }
 }
 
+func UI(_ closure: @escaping () -> Void) {
+    DispatchQueue.main.async {
+        closure()
+    }
+}

@@ -17,7 +17,7 @@ protocol HomeModuleInteractorInput: AnyObject {
 protocol HomeModuleInteractorOutput: AnyObject {
   /// Notifies that interactor finished loading listings
     func interactorDidFinishLoading(_ listings: [Listing])
-    func interactorDidFailWithError(_ error: Error)
+    func interactorDidFailWithError(_ error: String)
 }
 
 final class HomeModuleInteractor: HomeModuleInteractorInput {
@@ -35,7 +35,7 @@ final class HomeModuleInteractor: HomeModuleInteractorInput {
             case .success(let listings):
                 self?.output?.interactorDidFinishLoading(listings)
             case .failure(let error):
-                self?.output?.interactorDidFailWithError(error)
+                self?.output?.interactorDidFailWithError(error.localizedDescription)
             }
         }
     }

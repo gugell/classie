@@ -13,7 +13,7 @@ protocol LookupService {
     func fetchListings(completionHandler: @escaping  (Result<[Listing], LookupServiceError>) -> Void)
 }
 
-public enum LookupServiceError: Error {
+enum LookupServiceError: Error {
     case failure(Error)
     case badResponse
     case reason(String)
@@ -37,7 +37,7 @@ public enum LookupServiceError: Error {
 final class LookupServiceImpl: LookupService {
     private let provider: MoyaProvider<LookupServiceEndpoints>
 
-    init(provider: MoyaProvider<LookupServiceEndpoints> = _MoyaProvider.of(ofType: LookupServiceEndpoints.self, stubBehaviour: .immediate)) {
+    init(provider: MoyaProvider<LookupServiceEndpoints> = _MoyaProvider.of(ofType: LookupServiceEndpoints.self)) {
         self.provider = provider
     }
 

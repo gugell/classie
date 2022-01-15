@@ -61,6 +61,10 @@
 		651D04502792F650000E9381 /* ListingDetailsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D044F2792F650000E9381 /* ListingDetailsDatasource.swift */; };
 		651D04532792F6DD000E9381 /* ImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D04522792F6DD000E9381 /* ImagesCollectionViewCell.swift */; };
 		651D04552792FBA1000E9381 /* TextInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D04542792FBA1000E9381 /* TextInfoTableViewCell.swift */; };
+		651D0457279303F1000E9381 /* CustomImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D0456279303F1000E9381 /* CustomImageSource.swift */; };
+		651D04592793046D000E9381 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D04582793046D000E9381 /* ImageFetcher.swift */; };
+		651D045E27931BE5000E9381 /* ImageRandomizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D045D27931BE5000E9381 /* ImageRandomizer.swift */; };
+		651D046127931DA6000E9381 /* picsum.json in Resources */ = {isa = PBXBuildFile; fileRef = 651D046027931DA6000E9381 /* picsum.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +144,10 @@
 		651D044F2792F650000E9381 /* ListingDetailsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailsDatasource.swift; sourceTree = "<group>"; };
 		651D04522792F6DD000E9381 /* ImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		651D04542792FBA1000E9381 /* TextInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInfoTableViewCell.swift; sourceTree = "<group>"; };
+		651D0456279303F1000E9381 /* CustomImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageSource.swift; sourceTree = "<group>"; };
+		651D04582793046D000E9381 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		651D045D27931BE5000E9381 /* ImageRandomizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRandomizer.swift; sourceTree = "<group>"; };
+		651D046027931DA6000E9381 /* picsum.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = picsum.json; sourceTree = "<group>"; };
 		79EF867FE2EA66B3D917809E /* Pods-Classie-ClassieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Classie-ClassieUITests.debug.xcconfig"; path = "Target Support Files/Pods-Classie-ClassieUITests/Pods-Classie-ClassieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		929B5BB19911C1715BC54C2B /* Pods-ClassieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassieTests.release.xcconfig"; path = "Target Support Files/Pods-ClassieTests/Pods-ClassieTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7F5364742091B175EC14594 /* Pods_Classie_ClassieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Classie_ClassieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,11 +283,12 @@
 		651D00972792BD01000E9381 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				651D00C12792BE94000E9381 /* Lookup */,
+				651D045F27931D80000E9381 /* ImageFetcher */,
 				651D00D92792C447000E9381 /* MoyaProviderFactory.swift */,
 				651D00D72792C40A000E9381 /* MoyaProvider+Codable.swift */,
 				651D00CB2792BFBC000E9381 /* AppEnvironment.swift */,
 				651D00CA2792BFBC000E9381 /* Environment.swift */,
-				651D00C12792BE94000E9381 /* Lookup */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 				651D00A42792BDB1000E9381 /* BindableType.swift */,
 				651D00A32792BDB1000E9381 /* HUDPresentable.swift */,
 				651D00A52792BDB1000E9381 /* Presentable.swift */,
+				651D0456279303F1000E9381 /* CustomImageSource.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -503,6 +513,16 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		651D045F27931D80000E9381 /* ImageFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				651D04582793046D000E9381 /* ImageFetcher.swift */,
+				651D045D27931BE5000E9381 /* ImageRandomizer.swift */,
+				651D046027931DA6000E9381 /* picsum.json */,
+			);
+			path = ImageFetcher;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -523,6 +543,8 @@
 			dependencies = (
 			);
 			name = Classie;
+			packageProductDependencies = (
+			);
 			productName = Classie;
 			productReference = 651D00622792BCCA000E9381 /* Classie.app */;
 			productType = "com.apple.product-type.application";
@@ -598,6 +620,8 @@
 				ar,
 			);
 			mainGroup = 651D00592792BCC9000E9381;
+			packageReferences = (
+			);
 			productRefGroup = 651D00632792BCCA000E9381 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -616,6 +640,7 @@
 			files = (
 				651D04332792DC86000E9381 /* listings.json in Resources */,
 				651D00722792BCCB000E9381 /* LaunchScreen.storyboard in Resources */,
+				651D046127931DA6000E9381 /* picsum.json in Resources */,
 				651D00E12792C5D7000E9381 /* Colors.xcassets in Resources */,
 				651D009E2792BD59000E9381 /* Localizable.strings in Resources */,
 				651D006F2792BCCB000E9381 /* Assets.xcassets in Resources */,
@@ -815,15 +840,18 @@
 				651D00C02792BE31000E9381 /* AppServicesManager+AppInitializing.swift in Sources */,
 				651D00A82792BDB1000E9381 /* Presentable.swift in Sources */,
 				651D00BE2792BE31000E9381 /* ApplicationFlowService.swift in Sources */,
+				651D0457279303F1000E9381 /* CustomImageSource.swift in Sources */,
 				651D00E32792C649000E9381 /* CodableExtensions.swift in Sources */,
 				651D00B12792BDC6000E9381 /* BaseCoordinator.swift in Sources */,
 				651D044E2792EE90000E9381 /* DetailsFlowCoordinator.swift in Sources */,
 				651D04312792D8F3000E9381 /* EmptyView.swift in Sources */,
 				651D00B32792BDC6000E9381 /* DefaultWireframe.swift in Sources */,
+				651D04592793046D000E9381 /* ImageFetcher.swift in Sources */,
 				651D04372792DEAC000E9381 /* HomeModulePresenter.swift in Sources */,
 				651D00B22792BDC6000E9381 /* Coordinator.swift in Sources */,
 				651D04482792EB3F000E9381 /* ListingDetailsModulePresenter.swift in Sources */,
 				651D04532792F6DD000E9381 /* ImagesCollectionViewCell.swift in Sources */,
+				651D045E27931BE5000E9381 /* ImageRandomizer.swift in Sources */,
 				651D04352792DEA1000E9381 /* HomeModuleInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

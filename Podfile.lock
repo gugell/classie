@@ -3,9 +3,6 @@ PODS:
   - ImageSlideshow (1.9.2):
     - ImageSlideshow/Core (= 1.9.2)
   - ImageSlideshow/Core (1.9.2)
-  - ImageSlideshow/Kingfisher (1.9.2):
-    - ImageSlideshow/Core
-    - Kingfisher (> 3.0)
   - Kingfisher (7.1.2)
   - MBProgressHUD (1.2.0)
   - Moya (15.0.0):
@@ -22,7 +19,6 @@ PODS:
 
 DEPENDENCIES:
   - ImageSlideshow (~> 1.9.0)
-  - ImageSlideshow/Kingfisher
   - Kingfisher
   - MBProgressHUD (= 1.2.0)
   - Moya
@@ -51,6 +47,6 @@ SPEC CHECKSUMS:
   SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
   VanillaConstraints: 72ceb6f087b4467b22209d078e43819d8d331bf5
 
-PODFILE CHECKSUM: e4b3998a067c5898ad2a6fd13d37ccc71a1e8a44
+PODFILE CHECKSUM: 74d3c408fd2ccfde79bdd953356f55874b824252
 
 COCOAPODS: 1.11.2
