@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Classie
+
+  Created by Ilia Gutu on 15.01.2022.
+  
+*/
+
+// MARK: - Home
+"home.title" = "Home";
+"home.emptyFeed" = "No listings available at the moment.";
+
+// MARK: - Errors
+"action.retry" = "Retry";
+"error.fetch.title" = "Fetch error";
+
+// MARK: - Alerts
+"alert.ok" = "OK";
+"alert.cancel" = "Cancel";

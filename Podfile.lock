@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (5.5.0)
+  - ImageSlideshow (1.9.2):
+    - ImageSlideshow/Core (= 1.9.2)
+  - ImageSlideshow/Core (1.9.2)
+  - ImageSlideshow/Kingfisher (1.9.2):
+    - ImageSlideshow/Core
+    - Kingfisher (> 3.0)
+  - Kingfisher (7.1.2)
+  - MBProgressHUD (1.2.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - SwiftLint (0.45.1)
+  - VanillaConstraints (1.0.4)
+
+DEPENDENCIES:
+  - ImageSlideshow (~> 1.9.0)
+  - ImageSlideshow/Kingfisher
+  - Kingfisher
+  - MBProgressHUD (= 1.2.0)
+  - Moya
+  - Reusable
+  - SwiftLint
+  - VanillaConstraints
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ImageSlideshow
+    - Kingfisher
+    - MBProgressHUD
+    - Moya
+    - Reusable
+    - SwiftLint
+    - VanillaConstraints
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  ImageSlideshow: be305b54eaf2b2cfc7a7141c7c734605d44dc07d
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
+  VanillaConstraints: 72ceb6f087b4467b22209d078e43819d8d331bf5
+
+PODFILE CHECKSUM: e4b3998a067c5898ad2a6fd13d37ccc71a1e8a44
+
+COCOAPODS: 1.11.2
