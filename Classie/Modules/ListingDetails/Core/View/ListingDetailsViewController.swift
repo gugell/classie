@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 struct ListingDetailsViewModel {
     let title: String

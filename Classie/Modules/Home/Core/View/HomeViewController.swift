@@ -46,10 +46,10 @@ final class HomeViewController: UICollectionViewController, HUDPresentable {
 
     private var inlineLayout: UICollectionViewLayout = {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension:  .fractionalHeight(1.0))
+                                              heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension:.estimated(400))
+                                               heightDimension: .estimated(400))
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize,
                                                        subitems: [item])
         let section = NSCollectionLayoutSection(group: group)

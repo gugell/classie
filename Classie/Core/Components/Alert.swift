@@ -84,11 +84,3 @@ extension AlertPresentable where Self: UIViewController {
         present(UIAlertController(alert: alert), animated: true, completion: nil)
     }
 }
-
-//extension UIViewController {
-//    func present(_ alert: Alert,
-//                 animated: Bool = true,
-//                 completion: (() -> Void)? = nil) {
-//
-//    }
-//}

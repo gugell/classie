@@ -84,7 +84,9 @@ actor ImageFetcher {
     }
 
     private func fileName(for urlRequest: URLRequest) -> URL? {
-        guard let fileName = urlRequest.url?.absoluteString.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed),
+        guard let fileName = urlRequest.url?
+                .absoluteString
+                .addingPercentEncoding(withAllowedCharacters: .urlPathAllowed),
               let applicationSupport = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else {
                   return nil
               }

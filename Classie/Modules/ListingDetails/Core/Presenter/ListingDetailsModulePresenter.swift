@@ -36,7 +36,6 @@ final class ListingDetailsModulePresenter: ListingDetailsModuleViewOutput {
         view?.applySnapshot(snapshot: snapshot)
     }
 
-
     func onCloseButtonTapped() {
         router.dismiss()
     }

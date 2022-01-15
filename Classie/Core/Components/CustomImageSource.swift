@@ -37,10 +37,9 @@ public class CustomImageSource: NSObject, InputSource {
         imageView.image = self.placeholder
         Task.init {
             do {
-                let image = try await imageLoader.fetch(self.url)
+                let image = try await imageLoader.fetch(url)
                 UI { callback(image) }
             } catch {
-                print(error)
                 UI { callback(self.placeholder) }
             }
         }

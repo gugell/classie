@@ -43,20 +43,9 @@ final class TextInfoTableViewCell: UITableViewCell, Reusable, BindableType {
             .trailing(to: \.trailingAnchor, constant: 10)
             .bottom(to: \.bottomAnchor, constant: 20)
 
-        titleLabel.numberOfLines = 0
-        titleLabel.textAlignment = .left
-        titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        titleLabel.textColor = Colors.black()
-
-        priceLabel.numberOfLines = 0
-        priceLabel.textAlignment = .right
-        priceLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        priceLabel.textColor = Colors.black()
-
-        dateLabel.numberOfLines = 0
-        dateLabel.textAlignment = .left
-        dateLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        dateLabel.textColor = Colors.gray()
+        titleLabel.apply(style: TextStyles.title)
+        dateLabel.apply(style: TextStyles.subtitle)
+        priceLabel.apply(style: TextStyles.attribute)
     }
 
     func bindViewModel() {

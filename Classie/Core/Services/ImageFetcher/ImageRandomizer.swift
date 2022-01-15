@@ -23,8 +23,7 @@ enum Picsum {
 
             return (1...10)
                 .map { _ in Int.random(in: 0..<contents.count - 1) }
-                .compactMap { URL(string:         "https://picsum.photos/id/\(contents[$0].id)/\(Int(size.width))/\(Int(size.height))") }
+                .compactMap { URL(string: "https://picsum.photos/id/\($0)/\(Int(size.width))/\(Int(size.height))") }
         }
     }
 }
-

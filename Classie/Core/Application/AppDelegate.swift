@@ -12,7 +12,7 @@ class AppDelegate: PluggableApplicationDelegate {
 
     override var services: [ApplicationService] {
         return [
-            ApplicationFlowService(),
+            ApplicationFlowService()
         ]
     }
 

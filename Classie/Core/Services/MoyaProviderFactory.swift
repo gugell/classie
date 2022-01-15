@@ -13,7 +13,7 @@ enum _MoyaProvider {
                                        stubBehaviour: Moya.StubBehavior = .never) -> MoyaProvider<Target> {
         return MoyaProvider<Target>(stubClosure: {_ in stubBehaviour },
                                     plugins: [
-            NetworkLoggerPlugin.verbose,
+            NetworkLoggerPlugin.verbose
         ])
     }
 }

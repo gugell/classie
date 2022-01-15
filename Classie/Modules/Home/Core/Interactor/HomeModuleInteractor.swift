@@ -21,14 +21,14 @@ protocol HomeModuleInteractorOutput: AnyObject {
 }
 
 final class HomeModuleInteractor: HomeModuleInteractorInput {
-    
+
     weak var output: HomeModuleInteractorOutput!
     private let lookupService: LookupService
-    
+
     init(lookupService: LookupService) {
         self.lookupService = lookupService
     }
-    
+
     func reloadData() {
         lookupService.fetchListings { [weak self] result in
             switch result {

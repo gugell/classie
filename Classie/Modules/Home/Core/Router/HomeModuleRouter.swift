@@ -41,5 +41,3 @@ final class HomeModuleRouter: HomeModuleRouterInput {
         coordinator.showAlert(alert)
     }
 }
-
-

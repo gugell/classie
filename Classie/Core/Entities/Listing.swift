@@ -7,19 +7,13 @@
 
 import Foundation
 
-struct Listing {
+public struct Listing: Codable, Equatable {
     let name: String
     let price: String
     let uid: String
     let createdAt: String
     let images: [Image]
 
-    struct Image {
-        let url: URL
-    }
-}
-
-extension Listing: Codable {
     enum CodingKeys: String, CodingKey {
         case name
         case price
@@ -27,12 +21,31 @@ extension Listing: Codable {
         case createdAt = "created_at"
         case images = "image_urls"
     }
-}
 
-extension Listing.Image: Codable {
-    init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        let url = try container.decode(URL.self)
-        self.init(url: url)
+    public init(name: String, price: String, uid: String, createdAt: String, images: [Image]) {
+        self.name = name
+        self.price = price
+        self.uid = uid
+        self.createdAt = createdAt
+        self.images = images
     }
+
+    public struct Image: Codable {
+        let url: URL
+
+        public init(url: URL) {
+            self.url = url
+        }
+
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.singleValueContainer()
+            let url = try container.decode(URL.self)
+            self.init(url: url)
+        }
+    }
+
+    public static func == (lhs: Listing, rhs: Listing) -> Bool {
+        return lhs.uid == rhs.uid && lhs.name == rhs.name
+    }
+
 }

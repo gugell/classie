@@ -38,7 +38,7 @@ final class ImagesCollectionViewCell: UITableViewCell, Reusable, BindableType {
 
     func bindViewModel() {
         let images = viewModel.images + Picsum.Generator.randomImages()
-        //TODO: - Remove this logic once multiple images will be available for any of the items
+        // TODO: - Remove this logic once multiple images will be available for any of the items
         let mocksImages = images.map { CustomImageSource(url: $0, placeholder: Assets.defaultPlaceholder())}
         imageCarouselView.setImageInputs(mocksImages)
     }

@@ -6,7 +6,6 @@ def tools
 end
 
 def common_pods
-  pod 'Kingfisher'
   pod 'Moya'
 end
 
@@ -15,6 +14,11 @@ def ui
   pod 'MBProgressHUD', '1.2.0'
   pod 'Reusable'
   pod 'ImageSlideshow', '~> 1.9.0'
+end
+
+def tests
+  pod 'Quick'
+  pod 'Nimble'
 end
 
 target 'Classie' do
@@ -27,7 +31,8 @@ target 'Classie' do
 
   target 'ClassieTests' do
     inherit! :search_paths
-    # Pods for testing
+    common_pods
+    tests
   end
 
   target 'ClassieUITests' do

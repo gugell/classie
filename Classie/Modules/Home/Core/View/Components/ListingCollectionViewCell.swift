@@ -49,21 +49,9 @@ final class ListingCollectionViewCell: UICollectionViewCell, Reusable, BindableT
             .leading(to: \.leadingAnchor, constant: 10)
             .trailing(to: \.trailingAnchor, constant: 10)
             .bottom(to: \.bottomAnchor, constant: 20)
-
-        titleLabel.numberOfLines = 0
-        titleLabel.textAlignment = .left
-        titleLabel.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
-        titleLabel.textColor = Colors.black()
-
-        priceLabel.numberOfLines = 0
-        priceLabel.textAlignment = .right
-        priceLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        priceLabel.textColor = Colors.black()
-
-        dateLabel.numberOfLines = 0
-        dateLabel.textAlignment = .left
-        dateLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
-        dateLabel.textColor = Colors.gray()
+        titleLabel.apply(style: TextStyles.title)
+        dateLabel.apply(style: TextStyles.subtitle)
+        priceLabel.apply(style: TextStyles.attribute)
     }
 
     required init?(coder: NSCoder) {
@@ -76,12 +64,11 @@ final class ListingCollectionViewCell: UICollectionViewCell, Reusable, BindableT
         dateLabel.text = viewModel.createdAt
         let images = viewModel.images + Picsum.Generator.randomImages()
 
-        //TODO: - Remove this logic once multiple images will be available for any of the items
+        // TODO: - Remove this logic once multiple images will be available for any of the items
         let mocksImages = images.map { CustomImageSource(url: $0, placeholder: Assets.defaultPlaceholder())}
         imageCarouselView.setImageInputs(mocksImages)
     }
 }
-
 
 struct ListingCollectionViewCellViewModel: Hashable {
     let name: String

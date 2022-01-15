@@ -9,11 +9,11 @@ import Combine
 import Foundation
 import Moya
 
-protocol LookupService {
+public protocol LookupService {
     func fetchListings(completionHandler: @escaping  (Result<[Listing], LookupServiceError>) -> Void)
 }
 
-enum LookupServiceError: Error {
+public enum LookupServiceError: Error {
     case failure(Error)
     case badResponse
     case reason(String)
