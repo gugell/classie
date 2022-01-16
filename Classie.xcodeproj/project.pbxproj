@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		00E4446B8A31605D30075124 /* Pods_ClassieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09C8DE822DD366DE1461532 /* Pods_ClassieTests.framework */; };
-		134CCDC7554DA7C34597CABF /* Pods_Classie_ClassieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5364742091B175EC14594 /* Pods_Classie_ClassieUITests.framework */; };
 		615B8C49CE088138F5C3676D /* Pods_Classie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8AF0A7AC9E91EDD9A12C78B /* Pods_Classie.framework */; };
 		651D006F2792BCCB000E9381 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651D006E2792BCCB000E9381 /* Assets.xcassets */; };
 		651D00722792BCCB000E9381 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651D00702792BCCB000E9381 /* LaunchScreen.storyboard */; };
 		651D007D2792BCCB000E9381 /* ClassieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D007C2792BCCB000E9381 /* ClassieTests.swift */; };
-		651D00872792BCCB000E9381 /* ClassieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D00862792BCCB000E9381 /* ClassieUITests.swift */; };
-		651D00892792BCCB000E9381 /* ClassieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D00882792BCCB000E9381 /* ClassieUITestsLaunchTests.swift */; };
 		651D009E2792BD59000E9381 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 651D00A02792BD59000E9381 /* Localizable.strings */; };
 		651D00A62792BDB1000E9381 /* HUDPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D00A32792BDB1000E9381 /* HUDPresentable.swift */; };
 		651D00A72792BDB1000E9381 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651D00A42792BDB1000E9381 /* BindableType.swift */; };
@@ -74,17 +71,14 @@
 		65C6AE2E2794186B00994C7F /* FuncCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AE2D2794186B00994C7F /* FuncCheck.swift */; };
 		65C6AE312794198C00994C7F /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AE302794198C00994C7F /* Style.swift */; };
 		65C6AE3327941B7B00994C7F /* TextStyleCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AE3227941B7B00994C7F /* TextStyleCatalog.swift */; };
+		65C6AE35279421B900994C7F /* MockMoyaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AE34279421B900994C7F /* MockMoyaProvider.swift */; };
+		65C6AE382794254100994C7F /* LookupServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AE372794254100994C7F /* LookupServiceTests.swift */; };
+		65C6AE3D27942C9600994C7F /* HomeModuleInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AE3B27942C9600994C7F /* HomeModuleInteractorSpec.swift */; };
+		65C6AE3E27942C9600994C7F /* HomeModulePresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6AE3C27942C9600994C7F /* HomeModulePresenterSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		651D00792792BCCB000E9381 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 651D005A2792BCC9000E9381 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 651D00612792BCCA000E9381;
-			remoteInfo = Classie;
-		};
-		651D00832792BCCB000E9381 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 651D005A2792BCC9000E9381 /* Project object */;
 			proxyType = 1;
@@ -101,9 +95,6 @@
 		651D00732792BCCB000E9381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		651D00782792BCCB000E9381 /* ClassieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		651D007C2792BCCB000E9381 /* ClassieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassieTests.swift; sourceTree = "<group>"; };
-		651D00822792BCCB000E9381 /* ClassieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		651D00862792BCCB000E9381 /* ClassieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassieUITests.swift; sourceTree = "<group>"; };
-		651D00882792BCCB000E9381 /* ClassieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassieUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		651D009F2792BD59000E9381 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		651D00A32792BDB1000E9381 /* HUDPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDPresentable.swift; sourceTree = "<group>"; };
 		651D00A42792BDB1000E9381 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
@@ -166,6 +157,10 @@
 		65C6AE2D2794186B00994C7F /* FuncCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncCheck.swift; sourceTree = "<group>"; };
 		65C6AE302794198C00994C7F /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		65C6AE3227941B7B00994C7F /* TextStyleCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyleCatalog.swift; sourceTree = "<group>"; };
+		65C6AE34279421B900994C7F /* MockMoyaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMoyaProvider.swift; sourceTree = "<group>"; };
+		65C6AE372794254100994C7F /* LookupServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookupServiceTests.swift; sourceTree = "<group>"; };
+		65C6AE3B27942C9600994C7F /* HomeModuleInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModuleInteractorSpec.swift; sourceTree = "<group>"; };
+		65C6AE3C27942C9600994C7F /* HomeModulePresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModulePresenterSpec.swift; sourceTree = "<group>"; };
 		79EF867FE2EA66B3D917809E /* Pods-Classie-ClassieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Classie-ClassieUITests.debug.xcconfig"; path = "Target Support Files/Pods-Classie-ClassieUITests/Pods-Classie-ClassieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		929B5BB19911C1715BC54C2B /* Pods-ClassieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassieTests.release.xcconfig"; path = "Target Support Files/Pods-ClassieTests/Pods-ClassieTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7F5364742091B175EC14594 /* Pods_Classie_ClassieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Classie_ClassieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,14 +184,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E4446B8A31605D30075124 /* Pods_ClassieTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		651D007F2792BCCB000E9381 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				134CCDC7554DA7C34597CABF /* Pods_Classie_ClassieUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +219,6 @@
 				651D00642792BCCA000E9381 /* Classie */,
 				65C6AB032794166A00994C7F /* ClassieMocks */,
 				651D007B2792BCCB000E9381 /* ClassieTests */,
-				651D00852792BCCB000E9381 /* ClassieUITests */,
 				651D00632792BCCA000E9381 /* Products */,
 				3FD2D7C58A51C8E55E3A4CC3 /* Pods */,
 				06EA1BB5D2E02ACCE779334D /* Frameworks */,
@@ -244,7 +230,6 @@
 			children = (
 				651D00622792BCCA000E9381 /* Classie.app */,
 				651D00782792BCCB000E9381 /* ClassieTests.xctest */,
-				651D00822792BCCB000E9381 /* ClassieUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,19 +247,12 @@
 		651D007B2792BCCB000E9381 /* ClassieTests */ = {
 			isa = PBXGroup;
 			children = (
+				65C6AE3927942C5E00994C7F /* Modules */,
+				65C6AE362794252B00994C7F /* Services */,
 				65C6AE2C2794185A00994C7F /* Common */,
 				651D007C2792BCCB000E9381 /* ClassieTests.swift */,
 			);
 			path = ClassieTests;
-			sourceTree = "<group>";
-		};
-		651D00852792BCCB000E9381 /* ClassieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				651D00862792BCCB000E9381 /* ClassieUITests.swift */,
-				651D00882792BCCB000E9381 /* ClassieUITestsLaunchTests.swift */,
-			);
-			path = ClassieUITests;
 			sourceTree = "<group>";
 		};
 		651D00952792BCF0000E9381 /* Core */ = {
@@ -585,6 +563,7 @@
 			isa = PBXGroup;
 			children = (
 				65C6AE222794183100994C7F /* MockLookupService.swift */,
+				65C6AE34279421B900994C7F /* MockMoyaProvider.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -604,6 +583,31 @@
 				65C6AE3227941B7B00994C7F /* TextStyleCatalog.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		65C6AE362794252B00994C7F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				65C6AE372794254100994C7F /* LookupServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		65C6AE3927942C5E00994C7F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				65C6AE3A27942C8E00994C7F /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		65C6AE3A27942C8E00994C7F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				65C6AE3B27942C9600994C7F /* HomeModuleInteractorSpec.swift */,
+				65C6AE3C27942C9600994C7F /* HomeModulePresenterSpec.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -650,26 +654,6 @@
 			productReference = 651D00782792BCCB000E9381 /* ClassieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		651D00812792BCCB000E9381 /* ClassieUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 651D00922792BCCB000E9381 /* Build configuration list for PBXNativeTarget "ClassieUITests" */;
-			buildPhases = (
-				7C38D7AB97E5A38D7D0A6074 /* [CP] Check Pods Manifest.lock */,
-				651D007E2792BCCB000E9381 /* Sources */,
-				651D007F2792BCCB000E9381 /* Frameworks */,
-				651D00802792BCCB000E9381 /* Resources */,
-				5D51CF80E5399871CCAD3FBE /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				651D00842792BCCB000E9381 /* PBXTargetDependency */,
-			);
-			name = ClassieUITests;
-			productName = ClassieUITests;
-			productReference = 651D00822792BCCB000E9381 /* ClassieUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -684,10 +668,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					651D00772792BCCB000E9381 = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 651D00612792BCCA000E9381;
-					};
-					651D00812792BCCB000E9381 = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 651D00612792BCCA000E9381;
 					};
@@ -708,7 +688,6 @@
 			targets = (
 				651D00612792BCCA000E9381 /* Classie */,
 				651D00772792BCCB000E9381 /* ClassieTests */,
-				651D00812792BCCB000E9381 /* ClassieUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -728,13 +707,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		651D00762792BCCB000E9381 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		651D00802792BCCB000E9381 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -783,23 +755,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5D51CF80E5399871CCAD3FBE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Classie-ClassieUITests/Pods-Classie-ClassieUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Classie-ClassieUITests/Pods-Classie-ClassieUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Classie-ClassieUITests/Pods-Classie-ClassieUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		651D00DB2792C50D000E9381 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
@@ -835,28 +790,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$SRCROOT/.scripts/run-swiftgen.sh\n";
-		};
-		7C38D7AB97E5A38D7D0A6074 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Classie-ClassieUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		999C4B4887FAE85561992BBE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -918,6 +851,7 @@
 				651D00CD2792BFBC000E9381 /* AppEnvironment.swift in Sources */,
 				651D04552792FBA1000E9381 /* TextInfoTableViewCell.swift in Sources */,
 				651D044C2792EB5B000E9381 /* ListingDetailsModuleRouter.swift in Sources */,
+				65C6AE35279421B900994C7F /* MockMoyaProvider.swift in Sources */,
 				651D00D82792C40A000E9381 /* MoyaProvider+Codable.swift in Sources */,
 				651D00EB2792C975000E9381 /* HomeViewController.swift in Sources */,
 				651D00B02792BDC6000E9381 /* DeepLinkOption.swift in Sources */,
@@ -961,21 +895,15 @@
 			files = (
 				65C6AE2A2794184E00994C7F /* MockHomeViewInput.swift in Sources */,
 				65C6AE282794184E00994C7F /* MockHomeInteractorOutput.swift in Sources */,
+				65C6AE3D27942C9600994C7F /* HomeModuleInteractorSpec.swift in Sources */,
 				65C6AE1D279417E400994C7F /* MockListing.swift in Sources */,
 				651D007D2792BCCB000E9381 /* ClassieTests.swift in Sources */,
 				65C6AE2E2794186B00994C7F /* FuncCheck.swift in Sources */,
 				65C6AE292794184E00994C7F /* MockHomeModuleRouterInput.swift in Sources */,
+				65C6AE3E27942C9600994C7F /* HomeModulePresenterSpec.swift in Sources */,
 				65C6AE2B2794184E00994C7F /* MockHomeModuleInteractorInput.swift in Sources */,
+				65C6AE382794254100994C7F /* LookupServiceTests.swift in Sources */,
 				65C6AE232794183100994C7F /* MockLookupService.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		651D007E2792BCCB000E9381 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				651D00872792BCCB000E9381 /* ClassieUITests.swift in Sources */,
-				651D00892792BCCB000E9381 /* ClassieUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -986,11 +914,6 @@
 			isa = PBXTargetDependency;
 			target = 651D00612792BCCA000E9381 /* Classie */;
 			targetProxy = 651D00792792BCCB000E9381 /* PBXContainerItemProxy */;
-		};
-		651D00842792BCCB000E9381 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 651D00612792BCCA000E9381 /* Classie */;
-			targetProxy = 651D00832792BCCB000E9381 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1236,44 +1159,6 @@
 			};
 			name = Release;
 		};
-		651D00932792BCCB000E9381 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79EF867FE2EA66B3D917809E /* Pods-Classie-ClassieUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8VM589TX92;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.classie.app.ClassieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Classie;
-			};
-			name = Debug;
-		};
-		651D00942792BCCB000E9381 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6008B786DFE627C53A86C033 /* Pods-Classie-ClassieUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8VM589TX92;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.classie.app.ClassieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Classie;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1300,15 +1185,6 @@
 			buildConfigurations = (
 				651D00902792BCCB000E9381 /* Debug */,
 				651D00912792BCCB000E9381 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		651D00922792BCCB000E9381 /* Build configuration list for PBXNativeTarget "ClassieUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				651D00932792BCCB000E9381 /* Debug */,
-				651D00942792BCCB000E9381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

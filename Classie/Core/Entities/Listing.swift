@@ -42,6 +42,11 @@ public struct Listing: Codable, Equatable {
             let url = try container.decode(URL.self)
             self.init(url: url)
         }
+
+        public func encode(to encoder: Encoder) throws {
+            var container = encoder.singleValueContainer()
+            try container.encode(url)
+        }
     }
 
     public static func == (lhs: Listing, rhs: Listing) -> Bool {
